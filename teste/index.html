@@ -8,16 +8,35 @@
   <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-  <div id="container">
-    <button>Começar</button>
-  </div>
   <div id="overlay">
-    <div id="header">
-      <div id="close">x</div>
-      <div id="timer"></div>
+
+    <div id="questions">
+      <div>
+        <p>Você mora em casa ou apartamento?</p>
+        <button onclick="clicaImovel(this.value)" value="a">Casa</button>
+        <button onclick="clicaImovel(this.value)" value="b">Apartamento</button>
+      </div>
+      <div>
+        <p>Você procura reduzir o consumo de que tipo de recurso?
+        </p>
+        <button onclick="clicaImovel2(this.value)" value="a">Água</button>
+        <button onclick="clicaImovel2(this.value)" value="b">Energia</button>
+      </div>
+      <div>
+        <p>Quanto você pode investir?</p>
+        <button onclick="clicaImovel3(this.value)" value="a">- R$50</button>
+        <button onclick="clicaImovel3(this.value)" value="b">+ R$50</button>
+      </div>
     </div>
-    <div id="questions"></div>
-  </div>
+
+    <div id="botaoConcluir">
+        <button onclick="armazenaResultado()">Concluir</button>
+        <div id="resultado"></div>
+
+      </div>
+
+  </div>  
+
   <script src="./main.js"></script>
 </body>
 </html>

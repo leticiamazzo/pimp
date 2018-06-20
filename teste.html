@@ -4,19 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Quiz</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300" rel="stylesheet">
-  <link rel="stylesheet" href="./main.css">
+  <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <div id="container">
-    <button>Começar</button>
-  </div>
-  <div id="overlay">
-    <div id="header">
-      <div id="close">x</div>    
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item ">
+                      <a class="nav-link" href="teste.html">Teste<span class="sr-only"></span></a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  
+  <div>
+    <div id="questions">
+      <div>
+        <h2>Você mora em casa ou apartamento?</h2>
+        <button onclick="clicaImovel(this.value)" value="a">Casa</button>
+        <button onclick="clicaImovel(this.value)" value="b">Apartamento</button>
+      </div>
+      <div>
+        <h2>Você procura reduzir o consumo de que tipo de recurso?
+        </h2>
+        <button onclick="clicaImovel2(this.value)" value="a">Água</button>
+        <button onclick="clicaImovel2(this.value)" value="b">Energia</button>
+      </div>
+      <div>
+        <h2>Quanto você pode investir?</h2>
+        <button onclick="clicaImovel3(this.value)" value="a">- R$50</button>
+        <button onclick="clicaImovel3(this.value)" value="b">+ R$50</button>
+      </div>
     </div>
-    <div id="questions"></div>
-  </div>
-  <script src="./main.js"></script>
+    <div id="botaoConcluir">
+        <button onclick="armazenaResultado()">Concluir</button>
+        <div id="resultado"></div>
+    </div>
+  </div>  
+  <script src="./js/main.js"></script>
 </body>
 </html>
