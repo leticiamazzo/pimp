@@ -54,18 +54,15 @@ function armazenaResultado() {
     resultado.style.display = "block"
   } else if (concatResps === "aab") {
     document.getElementById("resultado").innerHTML =
-    `<p>- Colete água da chuva utilizando grandes recipientes. Utilize para regar o jardim, lavar o quintal ou usar na descarga</p>
+    `<p>-Invista em sistemas de captação de água pluvial. Utilize para regar o jardim, lavar o quintal ou usar na descarga</p>
     <p>- Para áreas externas opte por pisos permeáveis</p>
-    <p>- Reutilize materiais e consuma menos. Reaproveite!
-    </p>
+    <p>- Reutilize materiais e consuma menos. Reaproveite!</p>
     <p>- Opte por um vaso sanitário com caixa acoplada e acionamento duplo, pois resíduos líquidos não precisam de uma descarga completa</p>`
     resultado.style.display = "block"
   } else if (concatResps === "aba") {
     document.getElementById("resultado").innerHTML =
-    `<p>- Ambientes integrados (sem divisão por paredes) e com janelas, permitem maior circulação de ar e proporcionam melhor iluminação natural, minimizando o uso de sistema de ar-condicionado e iluminação artificial.</p>
-    <p>- Para iluminação artificial existem lâmpadas de baixo consumo, como as fluorescentes ou de LED</p>
-    <p>- Os panos de vidro (como janelas, porém sem abertura) também funcionam para trazer mais luz natural ao ambiente. Para espaços centrais, onde não é possível realizar aberturas nas paredes, clarabóias (aberturas no alto da construção “cobertas” com material translúcido que permite entrada de luz ou até ventilação) podem ser uma boa opção</p>
-    <p>- Invista em captação de energia solar. A princípio o investimento é alto, mas torna-se vantajoso a longo prazo</p>`
+    `<p>- Para iluminação artificial existem lâmpadas de baixo consumo, como as fluorescentes ou de LED</p>
+    <p>- Ambientes integrados (sem divisão por paredes) e com janelas, permitem maior circulação de ar e proporcionam melhor iluminação natural, minimizando o uso de sistema de ar-condicionado e iluminação artificial.</p>`
     resultado.style.display = "block"
   } else if (concatResps === "abb"){
     document.getElementById("resultado").innerHTML =
@@ -100,22 +97,4 @@ function armazenaResultado() {
 function refazerTeste() {
   concatResps = 0;
   resultado.style.display = "none"
-
 }
-
-
-// function nextQuizStep(index) {
-//   if (index < questions.length - 1) {
-//     questionsAll.style.left = `calc(${questionsAll.offsetLeft}px - 100vw)`
-//   } else {
-//     let answeredQuestions = ''
-//     for (const question of questions) {
-//       answeredQuestions += `
-//         <li>
-//           ${question.text}<br />
-//           <span class="${question.userAnswer === question.answer ? "right" : "wrong"}">
-//             ${question.userAnswer === true ? "VERDADEIRO" : "FALSO"}
-//           </span>
-//         </li>
-//       `
-//     }
