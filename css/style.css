@@ -118,6 +118,55 @@ footer p {
   margin: 10px 8px 0 8px;
 }
 
+/* TESTE */
+body {
+  background: #f3ffb6;
+}
+
+.teste_fundo {
+  margin-top: 60px;
+}
+
+#teste_questoes {
+  text-align: left;
+  margin-top: 65px;
+  color: #333333;
+}
+
+.teste_opcoes {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.teste_botao {
+  background-color: #f2940e;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  padding: 10px 15px 15px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.teste_conclusao {
+  display: flex;  
+  margin: 40px 0 40px 40px;
+}
+
+#resultado {
+  width: 400px;  
+  background-color: #f2940e;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 0px solid transparent;
+  text-align: left;
+  margin: 30px 30px 0px 0px;
+  padding: 10px 10px;
+  display: none;
+}
+
+
 @media (min-width: 770px) {
   .cards_alinhados {
     flex-direction: initial;
